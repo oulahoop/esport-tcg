@@ -35,3 +35,38 @@ export interface User {
 }
 
 export type BreadcrumbItemType = BreadcrumbItem;
+
+export interface Player {
+    code: string,
+    name: string,
+    position: string,
+    player_default_image: string
+}
+
+export interface Team {
+    code: string,
+    name: string,
+    team_default_image: string
+}
+
+export interface PlayerCard {
+    player: Player,
+    team: Team,
+
+    overall_rating: number,
+    micro_rating: number,
+    macro_rating: number,
+    teamplay_rating: number,
+    leadership_rating: number,
+    creativity_rating: number,
+    adaptability_rating: number,
+    consistency_rating: number,
+
+    rarity: string,
+    card_type: string,
+    release_date: string,
+    season: string,
+    tournament: string,
+
+    player_card_image: string
+}
